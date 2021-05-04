@@ -10,10 +10,12 @@ const GET_MOVIES = gql`
     }
 `
 
-export default () => {
+const Home = () => {
     const {loading, error, data} = useQuery(GET_MOVIES)
     console.log(loading, error, data);
     return (
         <h1>Home</h1>
     )
 }
+
+export default Home
